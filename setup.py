@@ -72,7 +72,7 @@ setup(
     package_data={"odise.model_zoo": get_model_zoo_configs()},
     python_requires=">=3.8",
     install_requires=[
-        "timm==0.6.11",  # freeze timm version for stabliity
+        "timm>=0.6.11",  # freeze timm version for stabliity
         "opencv-python>=4.6.0.66",
         "diffdist==0.1",
         "nltk>=3.6.2",
@@ -81,7 +81,7 @@ setup(
         # "transformers==4.20.1",  # freeze transformers version for stabliity
         # there is BC breaking in omegaconf 2.2.1
         # see: https://github.com/omry/omegaconf/issues/939
-        "omegaconf==2.1.1",
+        "omegaconf>=2.1.1",
         "open-clip-torch==2.0.2",
         "stable-diffusion-sdkit>=2.1.3",
     ],
